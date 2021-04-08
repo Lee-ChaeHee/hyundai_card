@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {margin:0; padding:0;}
+        .box {
+            width:100px;
+            height:100px;
+            background-color:#ddd;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.js">
+    </script>
+    <script>
+        $(function(){
+            /* $('.box').bind('click',function(){
+                console.log('test')
+            }) */
+            
+            /* $('.box').click(function(){
+                console.log('test')
+            }).mouseover(function(){
+                console.log('test')
+            }) */
+            
+            $('.box').on('click mouseover',function(){
+                console.log('test')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="box">box</div>
+</body>
+</html>
